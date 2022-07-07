@@ -1,0 +1,34 @@
+// document.getElementById("root").innerHTML = "React JS";
+// const ele3 = React.createElement("p", {}, "First Paragraph");
+// const ele2 = React.createElement("h1", {}, "First Heading");
+// const ele1 = React.createElement("div", {}, [ele2], [ele3]);
+// const newEle = <h1>New Heading</h1>;
+// const name = "Pradeep";
+// const newEle = (
+//   <div>
+//     {ele2}
+//     {ele3}
+//     {name}
+//     <h2>This is the second Heading</h2>
+//     <h3>{4 * 40}</h3>
+//   </div>
+// );
+// const newEle = <h1>{false ? "True" : "Not True"}</h1>;
+
+// const base = ReactDOM.createRoot(document.getElementById("root")).render(
+//   newEle
+// );
+class NewClass {
+  newFun() {
+    document.getElementById("root").innerHTML =
+      "Using react first function rendered";
+  }
+  newfun2() {
+    document.getElementById("root").innerHTML =
+      "Using react second function rendered";
+  }
+}
+
+var obj = new NewClass();
+obj.newFun();
+obj.newfun2();
